@@ -485,7 +485,7 @@ var APP = {
   initMacy: function initMacy() {
     var macy = macy__WEBPACK_IMPORTED_MODULE_2___default()({
       container: "#macy-container",
-      trueOrder: false,
+      trueOrder: true,
       waitForImages: false,
       margin: 14,
       columns: 3 // breakAt: {

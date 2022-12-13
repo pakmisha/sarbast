@@ -523,7 +523,7 @@ const APP = {
   initMacy() {
     var macy = Macy({
       container: "#macy-container",
-      trueOrder: false,
+      trueOrder: true,
       waitForImages: false,
       margin: 14,
       columns: 3,
