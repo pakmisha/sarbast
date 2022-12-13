@@ -1,0 +1,15 @@
+.modal 
+    .modal-wrapper 
+        .logo: img(src="/img/icons/logo.png") 
+        .verify
+            div(class="text-center")
+                h1(class="text-white text-3xl lg:text-4xl uppercase font-semibold") Введите ГОД рождения
+                p(class="text-xl text-white opacity-80") Вам должно быть больше 20 лет, чтобы зайти на сайт.
+            .verify-input-wrapper 
+                input(type="text" id="input1" tabindex="1" onkeyup="if (this.value.length == 1) document.getElementById('input2').focus();" onInput=onInput="{e => testJump(e.target)}" maxLength="1" class="verify-input verify-input-one")
+                input(type="text" id="input2" tabindex="2" onkeyup="if (this.value.length == 1) document.getElementById('input3').focus();" onInput=onInput="{e => testJump(e.target)}" maxLength="1" class="verify-input verify-input-two")
+                input(type="text" id="input3" tabindex="3" onkeyup="if (this.value.length == 1) document.getElementById('input4').focus();" onInput=onInput="{e => testJump(e.target)}" maxLength="1" class="verify-input verify-input-three")
+                input(type="text" id="input4" tabindex="4" onInput=onInput="{e => testJump(e.target)}" maxLength="1" class="verify-input verify-input-four")
+            div(class="no-verify text-center text-xl text-white font-semibold mt-3") К сожалению Вам нет 20 лет, вы не можете перейти на сайт
+        .warning Предупреждаем о вреде чрезмерного потребления алкогольной продукции
+        div(class="modal-eagle"): img(src="/img/icons/eagle.png", alt="")

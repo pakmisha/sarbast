@@ -1,0 +1,17 @@
+footer 
+    .content.footer 
+        .footer-content 
+            a(href="" class="inline-block"): img(src="/img/icons/logo.png", alt="")
+            h2.text-white.font-semibold(class="border-b border-brand-accent") Навигация
+            nav 
+                ul 
+                    each item in seed.nav
+                        li: a(href=item.ref class=item.styles)=item.title 
+            div(class="text-center text-brand-light")
+                p Горячая линия: 
+                    a(href="tel: +(998) 78 140 99 99") +(998) 78 140 99 99
+                p OOO "UZCARLSBERG", 100207, Узбекистан, г. Ташкент, ул. Темирчи, 1.
+                p Факс: (+998) 78 140 88 88
+                p Электронный адрес: 
+                    a(href="mailto: info@carlsberg.uz") info@carlsberg.uz
+        div(class="text-brand-light text-center py-5") 2022 Все права защищены

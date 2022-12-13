@@ -1,0 +1,29 @@
+section 
+    .y-distance#quiz.section 
+        div(class="max-w-md mx-auto text-center mb-7 lg:mb-0")
+            div.heading-subheading.text-brand-accent Блог
+            h1.heading-primary.text-white POP QUIZ
+        .content.relative 
+            .swiper.swiper-quiz(class="mt-7" data-options='{"navigation": {"nextEl": ".swiper-quiz-next", "prevEl": ".swiper-quiz-prev" }, "breakpoints": {"320": {"slidesPerView": 1.1, "spaceBetween": 20}, "640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3, "spaceBetween": 40}}}')
+                    .swiper-wrapper 
+                        .swiper-slide(v-for="(item, index) in questions" :key="index") 
+                            .quiz 
+                                .quiz-title {{item.question}} 
+                                .quiz-answers-wrapper
+                                    label.quiz-label(v-for="(answer, i) in item.answers" :for="'radio-' + index + '-' + i" :class="[{'is-success': item.isAnswered !== null && item.isAnswered == i && answer.point > 0}, {'is-error': item.isAnswered !== null && item.isAnswered == i && answer.point == 0}]") {{ answer.answer }}
+                                        input(:id="'radio-' + index + '-' + i" :name="'radio-' + index + '-' + i" :disabled="item.isAnswered !== null" @click.prevent="answered(item, answer)" type="radio")
+            div(v-if="success") 
+                div(v-for="item in results")
+                    div(v-if="result >= item.min && result <= item.max")
+                        .quiz-modal
+                            div.backdrop(@click.prevent="resetQuiz" class="absolute bg-black/30 backdrop-blur-lg inset-0")
+                            .quiz-modal-wrapper
+                                .relative(class="relative space-y-4 z-20") 
+                                    h1(class="uppercase font-semibold text-white text-2xl lg:text-3xl") {{ item.title }}
+                                    p(class="text-white text-lg lg:text-xl") {{ item.subtitle }}
+                                    p(class="text-white font-semibold") Вы ответили на:
+                                    p(class="text-white text-5xl lg:text-6xl font-semibold") {{Math.ceil(100 * result / questions.length)}}%
+                                button(class="close-quiz-modal" @click.prevent="resetQuiz") <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="" class="bi bi-x-lg" viewBox="0 0 16 16"> <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>
+                                div(class="absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"): img(class="w-[400px]" src="/img/icons/eagle.png", alt="")
+            .swiper-quiz-next <i class="bi bi-chevron-right ml-1"></i>
+            .swiper-quiz-prev <i class="bi bi-chevron-left mr-1"></i> 

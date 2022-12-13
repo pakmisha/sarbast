@@ -1,0 +1,8 @@
+.top-panel.content
+    .nav-panel
+        a(href="" class="logo"): img(src="/img/icons/logo.png" alt="logo")   
+        nav.navigation     
+            ul
+                each item in seed.nav
+                    li: a(href=item.ref class=item.styles)=item.title 
+        button.hamburger(class="block relative mr-5 lg:hidden")

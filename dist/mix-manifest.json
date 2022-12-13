@@ -1,0 +1,21 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/index.html": "/index.html",
+    "/layouts/app.html": "/layouts/app.html",
+    "/parts/achievements.html": "/parts/achievements.html",
+    "/parts/brands.html": "/parts/brands.html",
+    "/parts/coockie.html": "/parts/coockie.html",
+    "/parts/FAQ.html": "/parts/FAQ.html",
+    "/parts/footer.html": "/parts/footer.html",
+    "/parts/hero.html": "/parts/hero.html",
+    "/parts/history.html": "/parts/history.html",
+    "/parts/ingredients.html": "/parts/ingredients.html",
+    "/parts/marquee.html": "/parts/marquee.html",
+    "/parts/mobile-nav.html": "/parts/mobile-nav.html",
+    "/parts/modal.html": "/parts/modal.html",
+    "/parts/nav.html": "/parts/nav.html",
+    "/parts/news.html": "/parts/news.html",
+    "/parts/quiz.html": "/parts/quiz.html",
+    "/parts/video.html": "/parts/video.html"
+}

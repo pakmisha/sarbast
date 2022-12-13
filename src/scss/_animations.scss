@@ -1,0 +1,36 @@
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+// @keyframes gradient {
+//   0% {
+//     background-position: 0% 50%;
+//   }
+//   50% {
+//     background-position: 100% 50%;
+//   }
+//   100% {
+//     background-position: 0% 50%;
+//   }
+// }
+// @keyframes brands {
+//   0% {
+//     top: 100%;
+//   }
+//   25% {
+//     top: 0%;
+//   }
+//   50% {
+//     top: -100%;
+//   }
+//   75% {
+//     top: -200%;
+//   }
+//   100% {
+//     top: -300%;
+//   }
+// }

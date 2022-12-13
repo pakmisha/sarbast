@@ -1,0 +1,87 @@
+section  
+    .y-distance 
+        div(class="max-w-md mx-auto text-center")
+            div.heading-subheading.text-brand-accent О бренде
+            h1.heading-primary.text-white История бренда
+        .swiper-history-wrapper.mt-12#history.section  
+            .swiper-history-thumbs
+                .swiper-wrapper
+                    .swiper-slide
+                        .history-thumb 
+                            .history-thumb-item 2021
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+                    .swiper-slide
+                        .history-thumb 
+                            .history-thumb-item 2020
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+                    .swiper-slide
+                        .history-thumb 
+                            .history-thumb-item Февраль 2019 
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+                    .swiper-slide
+                        .history-thumb  
+                            .history-thumb-item 2014
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+                    .swiper-slide
+                        .history-thumb 
+                            .history-thumb-item 2010
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+                    .swiper-slide
+                        .history-thumb 
+                            .history-thumb-item 2007
+                                .history-chevron <i class="bi bi-chevron-down"></i>
+            .swiper-history(style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff')
+                .swiper-wrapper
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2021.png" class="w-full" alt="")
+                                .history-content-text 
+                                    span.font-semibold Выпуск продукции 
+                                    | с алюминиевой фольгой Впервые в Узбекистане запустили защитную фольгу на баночную продукцию Sarbast 
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2020.png" class="w-full" alt="")
+                                .history-content-text 
+                                    | Запуск 
+                                    span.font-semibold крышки-кольца 
+                                    | на стеклянных бутылках
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2019.png" class="w-full" alt="")
+                                .history-content-text 
+                                    span.font-semibold Возвращение к истокам 
+                                    | Бренд перезапустился со знакомым тысячам узбекистанцам символом орла: Sarbast Original, Sarbast Lite, Sarbast Special
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2014.png" class="w-full" alt="")
+                                .history-content-text 
+                                    span.font-semibold Перезапуск Sarbast, 
+                                    | в этот период обновился дизайн упаковки в условиях запрета рекламы алкогольной продукции.
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2010.png" class="w-full" alt="")
+                                .history-content-text  
+                                    span.font-semibold Позиция самого узнаваемого пива в своём сегменте. 
+                                    | Sarbast за короткие 4 года стал самым узнаваемым узбекским брендом пива
+                    .swiper-slide
+                        .history
+                            .history-content
+                                img(src="/img/bg/bg-history-2007.png" class="w-full" alt="")
+                                .history-content-text 
+                                    span.font-semibold Создание национального бренда пива “Sarbast”. 
+                                    | Sarbast – это первая марка узбекского пива, которая была приготовлена в соответствии с международными стандартами качества.
+                .swiper-history-next <i class="bi bi-chevron-right ml-1"></i>
+                .swiper-history-prev <i class="bi bi-chevron-left mr-1"></i> 
+        //- .swiper-history(class="pt-24 relative")
+        //-     .swiper-pagination.h-fit
+        //-     .swiper-wrapper 
+        //-         each item in seed.history
+        //-             .swiper-slide 
+        //-                 .history(style='background-image: url(' + item.bg + ')')
+        //-                     .history-content
+        //-                         .history-content-center=item.title 

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Главная",
+    "styles": "link",
+    "ref": "#hero"
+  },
+  {
+    "title": "История",
+    "styles": "link",
+    "ref": "#history"
+  },
+  {
+    "title": "Наши бренды",
+    "styles": "link",
+    "ref": "#brands"
+  },
+  {
+    "title": "Ингредиенты",
+    "styles": "link",
+    "ref": "#ingredients"
+  },
+  {
+    "title": "Достижения",
+    "styles": "link",
+    "ref": "#achievements"
+  },
+  {
+    "title": "Тест",
+    "styles": "link",
+    "ref": "#quiz"
+  }
+]

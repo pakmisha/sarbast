@@ -1,0 +1,68 @@
+.content {
+  @apply mx-auto max-w-[1270px] px-5 md:px-10 lg:px-20 2xl:max-w-[1550px] 2xl:px-28;
+}
+.y-distance {
+  @apply py-10 lg:py-20;
+}
+.btn-play {
+  @apply flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl text-body md:h-20 md:w-20 md:text-4xl;
+  &.show {
+    @apply hidden;
+  }
+}
+.btn-coockie {
+  @apply border border-black px-7 py-3 transition-all duration-300 ease-in-out;
+  &:hover {
+    @apply bg-black text-white;
+  }
+}
+.heading {
+  &-big {
+    @apply text-3xl font-bold lg:text-6xl 2xl:text-7xl 2xl:leading-[77px];
+  }
+  &-primary {
+    @apply text-2xl font-semibold lg:text-3xl 2xl:text-4xl;
+  }
+  &-subheading {
+    @apply text-base font-semibold lg:text-xl;
+  }
+}
+.link {
+  &.active {
+    @apply font-semibold;
+    &:after {
+      width: 100% !important;
+    }
+  }
+}
+.swiper-quiz-next,
+.swiper-quiz-prev {
+  @apply absolute flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-white bg-opacity-0 text-3xl text-brand-accent transition-all duration-300 ease-in-out;
+  &:hover {
+    @apply rounded-full bg-opacity-100;
+  }
+}
+.swiper-quiz-next {
+  @apply right-0 top-1/2 hidden -translate-y-1/2 md:flex lg:right-12;
+}
+.swiper-quiz-prev {
+  @apply left-0 top-1/2 hidden -translate-y-1/2 md:flex lg:left-12;
+}
+.swiper-history-next,
+.swiper-history-prev {
+  @apply absolute z-10 cursor-pointer text-5xl text-brand-accent;
+}
+.swiper-history-next {
+  @apply right-5 top-1/2 hidden md:flex;
+}
+.swiper-history-prev {
+  @apply left-5 top-1/2 hidden md:flex;
+}
+
+// .swiper-pagination {
+//   @apply top-10 m-0 space-x-20 text-center;
+//   .swiper-pagination-bullet {
+//     @apply box-border inline-flex items-center justify-center bg-transparent text-2xl font-semibold text-brand-accent opacity-100;
+//     margin-right: 100px !important;
+//   }
+// }
