@@ -16,6 +16,8 @@ Swiper.use([
   Mousewheel,
   Grid,
 ]);
+import flatpickr from "flatpickr";
+import { Russian } from "flatpickr/dist/l10n/ru.js";
 import AOS from "aos";
 import Macy from "macy";
 require("fslightbox");
@@ -326,7 +328,7 @@ const APP = {
 
       if (inputValueLenght == 4) {
         // console.log(typeof parseInt(inputValue));
-        if (parseInt(inputValue) <= currentYear - 20) {
+        if (parseInt(inputValue) <= currentYear - 21) {
           sessionStorage.setItem("AnnouncementOnce", "false");
           document.querySelector(".modal").classList.add("close");
           document.querySelector("html").classList.remove("no-scroll");
@@ -534,6 +536,16 @@ const APP = {
       // },
     });
   },
+  initFlatpicker() {
+    [...document.querySelectorAll(".datepicker")].forEach(($picker) => {
+      const defaultOptions = { locale: Russian };
+      let customOptions = $picker.dataset.options
+        ? JSON.parse($picker.dataset.options)
+        : {};
+      let options = Object.assign(defaultOptions, customOptions);
+      flatpickr($picker, options);
+    });
+  },
   initAccordion() {
     const $accordion = document.querySelectorAll(".faq");
     [...$accordion].forEach(($item) => {
@@ -552,6 +564,7 @@ document.addEventListener("DOMContentLoaded", () => {
     once: true,
   });
   APP.initModals();
+  APP.initFlatpicker();
   APP.initInputVerify();
   APP.initHamburger();
   APP.initLinks();

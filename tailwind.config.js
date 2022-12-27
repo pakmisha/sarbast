@@ -13,7 +13,7 @@ module.exports = {
       },
       fontFamily: {
         primary: ["PF DinText Pro", "sans-serif"],
-        secondary: ["Americana Std", "sans-serif"],
+        secondary: ["Americana XBd BT", "sans-serif"],
       },
       transitionTimingFunction: {
         inQuad: "cubic-bezier(0.33, 1, 0.68, 1)",

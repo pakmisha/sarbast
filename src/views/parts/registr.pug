@@ -1,0 +1,19 @@
+section 
+    .content.y-distance 
+        div(class="flex justify-between items-center flex-col md:flex-row")
+            div(class="w-full mb-5 lg:mb-0 md:w-1/2")
+                h2.heading-primary.text-white.mb-4 
+                    | Регистрация
+                    | на экскурсии и ивенты в "Visitor Center"
+                p.text-brand-light Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+            div(class="w-full md:w-[40%] 2xl:w-[35%]")
+                form(action="").registr
+                    h1(class="text-2xl font-semibold") Регистрация 
+                    .registr-inputs-wrapper 
+                        div: input(type="text" class="input" placeholder="ФИО") 
+                        div: input(type="number" class="input" placeholder="Номер телефона")
+                        div: input(type="email" class="input" placeholder="Е-мейл")
+                        div(class="flex items-center justify-between")
+                            div(class="mr-3"): input(type="text" class="input datepicker" data-options='{"disableMobile":true}' placeholder="Дата")
+                            div: input(type="text" class="input datepicker" data-options='{"time_24hr": true, "enableTime":true, "noCalendar": true, "disableMobile":true}' placeholder="Время")   
+                    button.btn-primary Отправить 
