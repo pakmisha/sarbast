@@ -237,6 +237,241 @@ new Vue({
           ],
         },
       ],
+      questionsUz: [
+        {
+          question: "Sarbast milliy pivo brendi qachon yaratilgan?",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "1992",
+              point: 0,
+            },
+            {
+              answer: "2001",
+              point: 0,
+            },
+            {
+              answer: "2007",
+              point: 1,
+            },
+            {
+              answer: "2012",
+              point: 0,
+            },
+          ],
+          // answers: {
+          //   1992: 10,
+          //   2001: 0,
+          //   2007: 0,
+          //   2012: 0,
+          // },
+        },
+        {
+          question: "Sarbast nimani anglatadi?",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "Yaxshi, mehribon, xayrixoh",
+              point: 0,
+            },
+            {
+              answer: "Erkin, mustaqil, hur",
+              point: 1,
+            },
+            {
+              answer: "Sifatli, sinovdan o'tgan, ishonchli",
+              point: 0,
+            },
+            {
+              answer: "Ajoyib, temperamentli, o'tkir",
+              point: 0,
+            },
+          ],
+        },
+        {
+          question: "Sarbast logotipida nima tasvirlangan? ",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "Burgut va nurlar",
+              point: 1,
+            },
+            {
+              answer: "Lochin va quyosh",
+              point: 0,
+            },
+            {
+              answer: "Qarg'a va yulduzlar",
+              point: 0,
+            },
+            {
+              answer: "Lochin va nurlar",
+              point: 0,
+            },
+          ],
+        },
+        {
+          question: "Qaysi Sarbast qadog'i folga yorliq bilan himoyalangan?",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "Sarbast Original Unfiltered",
+              point: 0,
+            },
+            {
+              answer: "Sarbast Special",
+              point: 0,
+            },
+            {
+              answer: "Sarbast Original",
+              point: 1,
+            },
+            {
+              answer: "Sarbast Lite",
+              point: 0,
+            },
+          ],
+        },
+
+        {
+          question:
+            "Sarbast original unfiltered ishlab chiqarish qaysi yilda boshlangan? ",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "2007",
+              point: 0,
+            },
+            {
+              answer: "2009",
+              point: 0,
+            },
+            {
+              answer: "2017",
+              point: 0,
+            },
+            {
+              answer: "2019",
+              point: 1,
+            },
+          ],
+        },
+        {
+          question: "Sarbast pivosining nechta turi bor? ",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "3",
+              point: 0,
+            },
+            {
+              answer: "4",
+              point: 1,
+            },
+            {
+              answer: "5",
+              point: 0,
+            },
+            {
+              answer: "7",
+              point: 0,
+            },
+          ],
+        },
+        {
+          question: "Sarbast qaysi xalqaro Belgiya tanlovida qatnashadi? ",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "Monde Selection",
+              point: 1,
+            },
+            {
+              answer: "International Beer Award",
+              point: 0,
+            },
+            {
+              answer: "Brussels Beer Award",
+              point: 0,
+            },
+            {
+              answer: "Belgium Selection",
+              point: 0,
+            },
+          ],
+        },
+        {
+          question: "Sarbast pivosi qaysi ingredientlardan tayyorlanadi? ",
+          isAnswered: null,
+          answers: [
+            {
+              answer:
+                "Suv, qabartma, undirib yanchilgan bug'doy, xmel o'simligi",
+              point: 0,
+            },
+            {
+              answer:
+                "Suv, xamirturush, undirib yanchilgan bug'doy, xmel o'simligi",
+              point: 1,
+            },
+            {
+              answer: "Suv, xamirturush, guruch, xmel o'simligi",
+              point: 0,
+            },
+            {
+              answer:
+                "Suv, iste'mol sodasi, undirib yanchilgan bug'doy, xmel o'simligi",
+              point: 0,
+            },
+          ],
+        },
+        {
+          question:
+            "Sarbast oilasining qaysi sab-brendida alkogol eng past darajada?",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "Sarbast Original Unfiltered",
+              point: 0,
+            },
+            {
+              answer: "Sarbast Special",
+              point: 0,
+            },
+            {
+              answer: "Sarbast Original",
+              point: 0,
+            },
+            {
+              answer: "Sarbast Lite",
+              point: 1,
+            },
+          ],
+        },
+        {
+          question:
+            "Sarbast 2022-yilda qaysi xalqaro sifat mukofotiga sazovor bo'ldi?",
+          isAnswered: null,
+          answers: [
+            {
+              answer: "American Beer Association Award",
+              point: 0,
+            },
+            {
+              answer: "Mezinárodní pivní festival ",
+              point: 0,
+            },
+            {
+              answer: "World Beer Awards",
+              point: 1,
+            },
+            {
+              answer: "Beerfest Olomouc",
+              point: 0,
+            },
+          ],
+        },
+      ],
       results: [
         {
           title: "Поздравляем!",
@@ -284,6 +519,23 @@ new Vue({
         }
       },
     },
+    questionsUz: {
+      deep: true,
+      handler(value) {
+        const answered = this.questionsUz.filter(
+          (item) => item.isAnswered !== null
+        );
+        if (answered.length == this.questionsUz.length) {
+          console.log("END");
+          this.success = true;
+        }
+        if (this.success) {
+          document.querySelector("html").classList.add("no-scroll");
+        } else {
+          document.querySelector("html").classList.remove("no-scroll");
+        }
+      },
+    },
   },
   methods: {
     answered(question, answer) {
@@ -295,6 +547,7 @@ new Vue({
       this.result = 0;
       this.success = false;
       this.questions.filter((item) => (item.isAnswered = null));
+      this.questionsUz.filter((item) => (item.isAnswered = null));
     },
   },
 });

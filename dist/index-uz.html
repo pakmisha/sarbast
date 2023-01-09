@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html class="no-scroll" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <title>Sarbast</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="mobile-nav">
+        <nav>
+          <ul>
+            <li><a class="link" href="#hero">Главная</a></li>
+            <li><a class="link" href="#history">История</a></li>
+            <li><a class="link" href="#brands">Наши бренды</a></li>
+            <li><a class="link" href="#ingredients">Ингредиенты</a></li>
+            <li><a class="link" href="#achievements">Достижения</a></li>
+            <li><a class="link" href="#quiz">Тест</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top-panel content">
+        <div class="nav-panel">
+          <a class="logo" href=""
+            ><img src="/img/icons/logo.png" alt="logo"
+          /></a>
+          <nav class="navigation">
+            <ul>
+              <li><a class="link" href="#hero">Главная</a></li>
+              <li><a class="link" href="#history">История</a></li>
+              <li><a class="link" href="#brands">Наши бренды</a></li>
+              <li><a class="link" href="#ingredients">Ингредиенты</a></li>
+              <li><a class="link" href="#achievements">Достижения</a></li>
+              <li><a class="link" href="#quiz">Тест</a></li>
+            </ul>
+            <div class="ml-5 flex items-center">
+              <a class="lang-link" href="/index.html">Ru </a>
+              <div class="mx-2 h-4 w-px bg-brand-accent"></div>
+              <a class="lang-link active" href="/index-uz.html">Uz </a>
+            </div>
+          </nav>
+          <button class="hamburger relative mr-5 block lg:hidden"></button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-wrapper">
+          <div class="logo"><img src="/img/icons/logo.png" /></div>
+          <div class="verify">
+            <div class="text-center">
+              <h1
+                class="text-3xl font-semibold uppercase text-white lg:text-4xl"
+              >
+                Введите ГОД рождения
+              </h1>
+              <p class="text-xl text-white opacity-80">
+                Вам должно быть больше 21 лет, чтобы зайти на сайт.
+              </p>
+            </div>
+            <div class="verify-input-wrapper">
+              <input
+                class="verify-input verify-input-one"
+                type="text"
+                id="input1"
+                tabindex="1"
+                onkeyup="if (this.value.length == 1) document.getElementById('input2').focus();"
+                onInput="{e =&gt; testJump(e.target)}"
+                maxlength="1"
+              />
+              <input
+                class="verify-input verify-input-two"
+                type="text"
+                id="input2"
+                tabindex="2"
+                onkeyup="if (this.value.length == 1) document.getElementById('input3').focus();"
+                onInput="{e =&gt; testJump(e.target)}"
+                maxlength="1"
+              />
+              <input
+                class="verify-input verify-input-three"
+                type="text"
+                id="input3"
+                tabindex="3"
+                onkeyup="if (this.value.length == 1) document.getElementById('input4').focus();"
+                onInput="{e =&gt; testJump(e.target)}"
+                maxlength="1"
+              />
+              <input
+                class="verify-input verify-input-four"
+                type="text"
+                id="input4"
+                tabindex="4"
+                onInput="{e =&gt; testJump(e.target)}"
+                maxlength="1"
+              />
+            </div>
+            <div
+              class="no-verify mt-3 text-center text-xl font-semibold text-white"
+            >
+              Вам нет 21 года, вы не можете перейти на сайт
+            </div>
+          </div>
+          <div class="warning">
+            21+ Предупреждаем о вреде чрезмерного потребления алкогольной
+            продукции
+          </div>
+          <div class="modal-eagle">
+            <img src="/img/icons/eagle.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="coockie">
+        <div
+          class="backdrop-coockie absolute inset-0 z-40 bg-black bg-opacity-50"
+        ></div>
+        <div class="coockie-content">
+          <h1 class="text-xl font-semibold uppercase">
+            Управление файлами cookie для лучшего цифрового результата
+          </h1>
+          <p class="mt-3">
+            Нажмите кнопку «Разрешить все», если вы согласны на использование
+            файлов cookie
+          </p>
+          <div class="mt-4">
+            <button class="btn-coockie mr-2">Разрешить</button>
+            <button class="btn-coockie">Отклонить</button>
+          </div>
+        </div>
+      </div>
+      <section class="relative">
+        <div class="hero content section" id="hero">
+          <div class="hero__left">
+            <h1
+              class="heading-big uppercase text-white"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            >
+              Eekspertlardan <br />
+              sifat kafolati
+            </h1>
+            <!-- <div
+              class="heading-primary uppercase text-white"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            ></div> -->
+          </div>
+          <div class="hero__right" data-aos="zoom-out" data-aos-duration="1000">
+            <img src="/img/bg/hero-beer.png" alt="" />
+          </div>
+        </div>
+        <div class="hero-eagle"><img src="/img/icons/eagle.png" alt="" /></div>
+      </section>
+      <section>
+        <div class="y-distance">
+          <div class="mx-auto max-w-md text-center">
+            <div class="heading-subheading text-brand-accent">О бренде</div>
+            <h1 class="heading-primary text-white">История бренда</h1>
+          </div>
+          <div class="swiper-history-wrapper section mt-12" id="history">
+            <div class="swiper-history-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      2021
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      2020
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      2019-2020
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      Февраль 2019
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      2010
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history-thumb">
+                    <div class="history-thumb-item">
+                      2007
+                      <div class="history-chevron">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-history"
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2021.jpg"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold"
+                          >Zarqog‘ozli qadoqlarda mahsulot ishlab chiqarish </span
+                        >Sarbast bankali mahsulotlarida O‘zbekistonda ilk bora
+                        himoya zarqog‘ozi qo‘llana boshladi.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2020.jpg"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold">Butilkalarda </span> halqali
+                        qopqoq qo‘llanila boshladi
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2019-2022.png"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold"
+                          >Yangi navli pivoning ishlab chiqarilishi </span
+                        >Kompaniya Sarbast Original Unfiltered (Sarbast Original
+                        Filtrlanmagan) ni ishlab chiqarishni boshladi.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2019.jpg"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold">Moziyga qaytish </span>Brend
+                        minglab o‘zbekistonliklarga tanish bo‘lgan burgut
+                        timsoli bilan qaytdi: Sarbast Original, Sarbast Lite,
+                        Sarbast Special
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2010.jpg"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold"
+                          >O‘z segmentida eng tanilgan pivo maqomi. </span
+                        >Sarbast qisqa 4 yil ichida eng tanilgan o‘zbek pivosi
+                        brendiga aylandi
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history">
+                    <div class="history-content">
+                      <img
+                        class="w-full"
+                        src="/img/bg/bg-history-2007.jpg"
+                        alt=""
+                      />
+                      <div class="history-content-text">
+                        <span class="font-semibold"
+                          >“Sarbast” milliy pivo brendining yaratilishi </span
+                        >Sarbast – xalqaro sifat standartlariga muvofiq
+                        tayyorlangan o‘zbek pivosining birinchi markasi.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-history-next">
+                <i class="bi bi-chevron-right ml-1"></i>
+              </div>
+              <div class="swiper-history-prev">
+                <i class="bi bi-chevron-left mr-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content y-distance section" id="brands">
+          <div class="mx-auto max-w-md text-center">
+            <div class="heading-subheading text-brand-accent">Продукция</div>
+            <h1 class="heading-primary text-white">Наши бренды</h1>
+          </div>
+          <div
+            class="swiper mt-7"
+            data-options='{"slidesPerView": 4, "breakpoints": {"320": {"slidesPerView": 1.1, "spaceBetween": 20}, "640": {"slidesPerView": 2}, "1024": {"slidesPerView": 4, "spaceBetween": 40}}}'
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+              >
+                <div class="product">
+                  <div
+                    class="product__image"
+                    style="background-image: url('/img/bg/bg-product-1.png')"
+                  >
+                    <div
+                      class="swiper swiper-products"
+                      data-options='{"autoplay": {"delay": 3000, "disableOnInteraction": false}, "direction": "vertical", "slidesPerView": 1, "spaceBetween": 30, "mousewheel": true, "pagination": {"el": ".swiper-products-pagination", "clickable": true}}'
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-1.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img
+                                src="/img/bg/brand-beer-unfiltered.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-products-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="product__name">SARBAST original Unfiltered</div>
+                  <div class="product__description">
+                    Ichimlik to‘yingan, yorqin va chuqur ta’mga ega va o‘zidan
+                    keyin filtrlanmagan pivoning nozik ta’mini qoldiradi.
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom__fortress">
+                      <div class="flex">
+                        <div class="mr-1">Darajasi:</div>
+                        <div>4,7%</div>
+                      </div>
+                      <div class="flex">
+                        <div class="mr-1">Zichligi:</div>
+                        <div>11%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+              >
+                <div class="product">
+                  <div
+                    class="product__image"
+                    style="background-image: url('/img/bg/bg-product-2.png')"
+                  >
+                    <div
+                      class="swiper swiper-products"
+                      data-options='{"autoplay": {"delay": 2000, "disableOnInteraction": false}, "direction": "vertical", "slidesPerView": 1, "spaceBetween": 30, "mousewheel": true, "pagination": {"el": ".swiper-products-pagination", "clickable": true}}'
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-5.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-2.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-8.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-products-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="product__name">SARBAST SPECIAL</div>
+                  <div class="product__description">
+                    Ikki nafli xush iforli qulmoqdan foydalanish sababli pivoga
+                    betakror ifor va yoqimli taxirlik xos
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom__fortress">
+                      <div class="flex">
+                        <div class="mr-1">Darajasi:</div>
+                        <div>5%</div>
+                      </div>
+                      <div class="flex">
+                        <div class="mr-1">Zichligi:</div>
+                        <div>11.6%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+              >
+                <div class="product">
+                  <div
+                    class="product__image"
+                    style="background-image: url('/img/bg/bg-product-3.png')"
+                  >
+                    <div
+                      class="swiper swiper-products"
+                      data-options='{"autoplay": {"delay": 4000, "disableOnInteraction": false}, "direction": "vertical", "slidesPerView": 1, "spaceBetween": 30, "mousewheel": true, "pagination": {"el": ".swiper-products-pagination", "clickable": true}}'
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-9.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-4.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-7.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img
+                                src="/img/bg/brand-beer-original.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-products-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="product__name">SARBAST original</div>
+                  <div class="product__description">
+                    Sof ifor, to‘yingan va mo‘’tadil ta’mga ega klassik och rang
+                    lager
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom__fortress">
+                      <div class="flex">
+                        <div class="mr-1">Darajasi:</div>
+                        <div>4,2%</div>
+                      </div>
+                      <div class="flex">
+                        <div class="mr-1">Zichligi:</div>
+                        <div>10.5%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-delay="350"
+              >
+                <div class="product">
+                  <div
+                    class="product__image"
+                    style="background-image: url('/img/bg/bg-product-4.png')"
+                  >
+                    <div
+                      class="swiper swiper-products"
+                      data-options='{"autoplay": {"delay": 5000, "disableOnInteraction": false}, "direction": "vertical", "slidesPerView": 1, "spaceBetween": 30, "mousewheel": true, "pagination": {"el": ".swiper-products-pagination", "clickable": true}}'
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-10.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-6.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/product-3.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="product-image-wrapper">
+                            <div class="product-image-slide">
+                              <img src="/img/bg/brand-beer-lite.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-products-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="product__name">SARBAST LITE</div>
+                  <div class="product__description">
+                    A’lo darajada tetiklik baxsh etuvchi yengil, mayin ta’mga
+                    ega va o‘zidan keyin yoqimli undirilgan arpa ta’mini
+                    qoldiruvchi pivo
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom__fortress">
+                      <div class="flex">
+                        <div class="mr-1">Darajasi:</div>
+                        <div>3,4%</div>
+                      </div>
+                      <div class="flex">
+                        <div class="mr-1">Zichligi:</div>
+                        <div>9%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="y-distance marquee mb-[60px]">
+        <div class="marquee-inner">
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+          <div class="marquee-inner-item">Tabiiy</div>
+          <div class="marquee-inner-item">Toza</div>
+          <div class="marquee-inner-item">Sifatli</div>
+          <div class="marquee-inner-item">Mazali</div>
+        </div>
+      </div>
+      <section>
+        <div class="content y-distance section" id="ingredients">
+          <div class="mx-auto mb-7 max-w-md text-center">
+            <div class="heading-subheading text-brand-accent">Продукция</div>
+            <h1 class="heading-primary text-white">Ингредиенты</h1>
+          </div>
+          <div class="space-y-5">
+            <div class="ingredient" data-aos="fade-up" data-aos-duration="1000">
+              <div class="ingredient__left video">
+                <video
+                  class="w-full"
+                  src="/video/ingredient-video-4.mp4"
+                  playsinline
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
+              <div class="ingredient__right desc">
+                <div class="ingredient-text-wrapper">
+                  <h2 class="ingredient-text-heading">Suv</h2>
+                  <div class="ingredient-text-description">
+                    Sarbast 200 metr chuqurlikda olinadigan sof artezian suvidan
+                    pishiriladi. Suvni ko‘p bosqichli tozalash tizimi
+                    pivomizning tozaligi va mo‘’tadilligini kafolatlaydi.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ingredient" data-aos="fade-up" data-aos-duration="1000">
+              <div class="ingredient__left desc">
+                <div class="ingredient-text-wrapper">
+                  <h2 class="ingredient-text-heading">
+                    Och rang undirilgan arpa
+                  </h2>
+                  <div class="ingredient-text-description">
+                    Biz sifatli, import qilingan soloddan foydalanamiz va u
+                    pivomizga sof va boy ta’m, shuningdek, oltin rang baxsh
+                    etadi.
+                  </div>
+                </div>
+              </div>
+              <div class="ingredient__right video">
+                <video
+                  class="w-full"
+                  src="/video/ingredient-video-1.mp4"
+                  playsinline
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
+            </div>
+            <div class="ingredient" data-aos="fade-up" data-aos-duration="1000">
+              <div class="ingredient__left video">
+                <video
+                  class="w-full"
+                  src="/video/ingredient-video-2.mp4"
+                  playsinline
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
+              <div class="ingredient__right desc">
+                <div class="ingredient-text-wrapper">
+                  <h2 class="ingredient-text-heading">Qulmoq</h2>
+                  <div class="ingredient-text-description">
+                    Sarbast’dagi betakror ifor va yoqimli taxirlikni katta
+                    hafsala bilan yetishtirilgan an’anaviy qulmoq (xmel)
+                    ta’minlaydi.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ingredient" data-aos="fade-up" data-aos-duration="1000">
+              <div class="ingredient__left desc">
+                <div class="ingredient-text-wrapper">
+                  <h2 class="ingredient-text-heading">Xamirturush</h2>
+                  <div class="ingredient-text-description">
+                    Yevropadan keltirilgan yuqori sifatli xamirturush tabiiy
+                    solod va qulmoqning ta’mini to‘laqonli ochish imkonini
+                    beradi.
+                  </div>
+                </div>
+              </div>
+              <div class="ingredient__right video">
+                <video
+                  class="w-full"
+                  src="/video/ingredient-video-3.mp4"
+                  playsinline
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="y-distance">
+          <div class="video__container">
+            <video
+              class="video"
+              src="/video/video.mp4"
+              poster="/img/bg/video-poster.png"
+            ></video>
+            <button
+              class="btn-play absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <i class="bi bi-play-fill ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content y-distance section" id="achievements">
+          <div class="mx-auto mb-7 max-w-md text-center lg:mb-16">
+            <div class="heading-subheading text-brand-accent">
+              Международные Конкурсы
+            </div>
+            <h1 class="heading-primary text-white">Достижения</h1>
+          </div>
+          <div class="flex flex-col justify-between lg:flex-row">
+            <div class="achievement md:mr-5">
+              <div class="flex w-full flex-col justify-between md:flex-row">
+                <div class="achievement__left">
+                  <p class="mb-2 text-xl font-semibold lg:mb-3">
+                    Monde Selection
+                  </p>
+                  <div class="text-sm text-brand-gray">
+                    Belgiyada tashkil etilgan «Monde Selection» instituti 1961
+                    yildan beri iste’mol mahsulotlarining sifatini belgilab
+                    keladi. Institut o‘zini iste’mol mahsulotlarining sifatini
+                    organoleptik va ilmiy ko‘rsatkichlarga ko‘ra baholash
+                    sohasida eng eski va yetakchi institut sifatida namoyon
+                    qilgan.
+                  </div>
+                </div>
+                <div class="achievement__right">
+                  <div class="achievement__right__item mr-3">
+                    <img src="/img/icons/achievement-1.png" />
+                  </div>
+                  <div class="achievement__right__item">
+                    <img src="/img/icons/achievement-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="mt-5 text-base font-semibold">
+                Biz oltin va kumush medallar sohibimiz
+              </p>
+            </div>
+            <div class="achievement mt-10 lg:mt-0">
+              <div class="flex w-full flex-col justify-between md:flex-row">
+                <div class="achievement__left">
+                  <p class="mb-2 text-xl font-semibold lg:mb-3">
+                    World Beer Awards
+                  </p>
+                  <div class="text-sm text-brand-gray">
+                    World Beer Awards — barcha e’tirof etilgan pivo navlari
+                    orasida eng yaxshi pivo brendlarini aniqlaydigan xalqaro
+                    mukofot bo‘lib, global darajada iste’molchilar orasida eng
+                    yaxshi pivo markalarini targ‘ib qilib boradi.
+                  </div>
+                </div>
+                <div class="achievement__right">
+                  <div class="achievement__right__item mr-3">
+                    <img src="/img/icons/achievement-3.png" />
+                  </div>
+                  <div class="achievement__right__item">
+                    <img src="/img/icons/achievement-4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="mt-5 text-base font-semibold">
+                Biz oltin va kumush medallar sohibimiz
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content y-distance">
+          <div
+            class="flex flex-col-reverse items-center justify-between lg:flex-row"
+          >
+            <div class="news" id="macy-container">
+              <a
+                class="news-item"
+                href="https://www.instagram.com/p/Ck0lahioBrN/"
+                ><img class="w-[250px]" src="/img/bg/news-1.jpg" alt="" /></a
+              ><a
+                class="news-item"
+                href="https://www.instagram.com/p/CjVNWV-N9GR/"
+                ><img class="w-[350px]" src="/img/bg/news-2.jpg" alt="" /></a
+              ><a
+                class="news-item"
+                href="https://www.instagram.com/p/Cl8wpWEtN6y/"
+                ><img class="w-[250px]" src="/img/bg/news-3.jpeg" alt="" /></a
+              ><a
+                class="news-item"
+                href="https://www.instagram.com/p/CjX393OD4dX/"
+                ><img class="w-[350px]" src="/img/bg/news-4.jpg" alt="" /></a
+              ><a
+                class="news-item"
+                href="https://www.instagram.com/p/CmgrLG2NB_k/"
+                ><img class="w-[250px]" src="/img/bg/news-5.jpeg" alt="" /></a
+              ><a
+                class="news-item"
+                href="https://www.instagram.com/p/ClYhhjHN0rP/"
+                ><img class="w-[200px]" src="/img/bg/news-6.jpeg" alt=""
+              /></a>
+            </div>
+            <div class="mx-auto mb-7 max-w-md text-center lg:mb-0">
+              <div class="heading-subheading text-brand-accent">Новости</div>
+              <h1 class="heading-primary text-white">Будь на связи</h1>
+              <a class="mt-2 block" href="https://www.instagram.com/sarbast.uz/"
+                ><img src="/img/icons/arrow-right.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="y-distance section" id="quiz">
+          <div class="mx-auto mb-7 max-w-md text-center lg:mb-0">
+            <div class="heading-subheading text-brand-accent">Блог</div>
+            <h1 class="heading-primary text-white">POP QUIZ</h1>
+          </div>
+          <div class="content relative">
+            <div
+              class="swiper swiper-quiz mt-7"
+              data-options='{"navigation": {"nextEl": ".swiper-quiz-next", "prevEl": ".swiper-quiz-prev" }, "breakpoints": {"320": {"slidesPerView": 1.1, "spaceBetween": 20}, "640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3, "spaceBetween": 40}}}'
+            >
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  v-for="(item, index) in questionsUz"
+                  :key="index"
+                >
+                  <div class="quiz">
+                    <div class="quiz-title">{{item.question}}</div>
+                    <div class="quiz-answers-wrapper">
+                      <label
+                        class="quiz-label"
+                        v-for="(answer, i) in item.answers"
+                        :for="'radio-' + index + '-' + i"
+                        :class="[{'is-success': item.isAnswered !== null &amp;&amp; item.isAnswered == i &amp;&amp; answer.point &gt; 0}, {'is-error': item.isAnswered !== null &amp;&amp; item.isAnswered == i &amp;&amp; answer.point == 0}]"
+                        >{{ answer.answer }}
+                        <input
+                          :id="'radio-' + index + '-' + i"
+                          :name="'radio-' + index + '-' + i"
+                          :disabled="item.isAnswered !== null"
+                          @click.prevent="answered(item, answer)"
+                          type="radio"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div v-if="success">
+              <div v-for="item in results">
+                <div
+                  v-if="result &gt;= item.min &amp;&amp; result &lt;= item.max"
+                >
+                  <div class="quiz-modal">
+                    <div
+                      class="backdrop absolute inset-0 bg-black/30 backdrop-blur-lg"
+                      @click.prevent="resetQuiz"
+                    ></div>
+                    <div class="quiz-modal-wrapper">
+                      <div class="relative relative z-20 space-y-4">
+                        <h1
+                          class="text-2xl font-semibold uppercase text-white lg:text-3xl"
+                        >
+                          {{ item.title }}
+                        </h1>
+                        <p class="text-lg text-white lg:text-xl">
+                          {{ item.subtitle }}
+                        </p>
+                        <p class="font-semibold text-white">Вы ответили на:</p>
+                        <p
+                          class="text-5xl font-semibold text-white lg:text-6xl"
+                        >
+                          {{Math.ceil(100 * result / questions.length)}}%
+                        </p>
+                      </div>
+                      <button
+                        class="close-quiz-modal"
+                        @click.prevent="resetQuiz"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill=""
+                          class="bi bi-x-lg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        class="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
+                      >
+                        <img
+                          class="w-[400px]"
+                          src="/img/icons/eagle.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-quiz-next">
+              <i class="bi bi-chevron-right ml-1"></i>
+            </div>
+            <div class="swiper-quiz-prev">
+              <i class="bi bi-chevron-left mr-1"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content y-distance">
+          <div class="flex flex-col items-center justify-between md:flex-row">
+            <div class="mb-5 w-full md:w-1/2 lg:mb-0">
+              <h2 class="heading-primary mb-4 text-white">
+                Регистрация на экскурсии и ивенты в "Visitor Center"
+              </h2>
+              <p class="text-brand-light">
+                Biz sizga bepul ekskursiyani otishga taklif etamiz, bu erda
+                SARBAST brendni tarixi bilan tanishasiz, zavodning yuragi - pivo
+                ishlab chiqarish tsexini ko'rasiz,
+                <br />
+                <br />
+                SARBAST brending O'zbekistondagi birinchi "Monde Selection" va
+                "World Beer Awards" mukofotlariga ega bo'lishiga turtki bergan
+                xalqaro pivo ishlab chiqarish jarayonining barcha taraflarini
+                o'rganish qobiliyatiga ega bo'lasiz.
+                <br />
+                <br />
+                Agar siz va do'stlaringiz 20 yoshga to’lgan bo’lsangiz,
+                ekskursiyaga hoziroq
+                <a href="tel: + 998 90 969 01 10">+ 998 90 969 01 10</a>
+                raqamiga qo'ng'iroq qilib yoki @VisitUzCarlsbergBot telegram bot
+                orqali yoziling.
+              </p>
+            </div>
+            <div class="w-full md:w-[40%] 2xl:w-[35%]">
+              <form class="registr" action="">
+                <h1 class="text-2xl font-semibold">Регистрация</h1>
+                <div class="registr-inputs-wrapper">
+                  <div>
+                    <input class="input" type="text" placeholder="ФИО" />
+                  </div>
+                  <div>
+                    <input
+                      class="input"
+                      type="number"
+                      placeholder="Номер телефона"
+                    />
+                  </div>
+                  <div>
+                    <input class="input" type="email" placeholder="Е-мейл" />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="mr-3">
+                      <input
+                        class="input datepicker"
+                        type="text"
+                        data-options='{"disableMobile":true}'
+                        placeholder="Дата"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        class="input datepicker"
+                        type="text"
+                        data-options='{"time_24hr": true, "enableTime":true, "noCalendar": true, "disableMobile":true}'
+                        placeholder="Время"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-primary">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="content mt-10 mb-5 text-center text-2xl text-brand-gray lg:text-4xl"
+        >
+          21+ ALKOGOL MAHSULOTLARINI ME’YORIDAN ORTIQ ISTE’MOL QILISH INSON ASAB
+          TIZIMI VA ICHKI ORGANLARINING JIDDIY KASALLIKLARINI KELTIRIB CHIQARADI
+        </div>
+      </section>
+      <section class="hidden">
+        <div class="y-distance">
+          <div class="faq">
+            <div class="faq-item">
+              <div class="faq-item-wrapper">
+                <div class="faq-item-toggle">
+                  <div class="text-base lg:text-2xl">
+                    Когда был создан национальный бренд пива Sarbast?
+                  </div>
+                  <div class="flex">
+                    <div class="btn-down"><i class="bi bi-x"></i></div>
+                  </div>
+                </div>
+                <div class="faq-item-content">
+                  Когда был создан национальный бренд пива Sarbast? Когда был
+                  создан национальный бренд пива Sarbast?
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item-wrapper">
+                <div class="faq-item-toggle">
+                  <div class="text-base lg:text-2xl">
+                    Когда был создан национальный бренд пива Sarbast?
+                  </div>
+                  <div class="flex">
+                    <div class="btn-down"><i class="bi bi-x"></i></div>
+                  </div>
+                </div>
+                <div class="faq-item-content">
+                  Когда был создан национальный бренд пива Sarbast? Когда был
+                  создан национальный бренд пива Sarbast?
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item-wrapper">
+                <div class="faq-item-toggle">
+                  <div class="text-base lg:text-2xl">
+                    Когда был создан национальный бренд пива Sarbast?
+                  </div>
+                  <div class="flex">
+                    <div class="btn-down"><i class="bi bi-x"></i></div>
+                  </div>
+                </div>
+                <div class="faq-item-content">
+                  Когда был создан национальный бренд пива Sarbast? Когда был
+                  создан национальный бренд пива Sarbast?
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item-wrapper">
+                <div class="faq-item-toggle">
+                  <div class="text-base lg:text-2xl">
+                    Когда был создан национальный бренд пива Sarbast?
+                  </div>
+                  <div class="flex">
+                    <div class="btn-down"><i class="bi bi-x"></i></div>
+                  </div>
+                </div>
+                <div class="faq-item-content">
+                  Когда был создан национальный бренд пива Sarbast? Когда был
+                  создан национальный бренд пива Sarbast?
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-item-wrapper">
+                <div class="faq-item-toggle">
+                  <div class="text-base lg:text-2xl">
+                    Когда был создан национальный бренд пива Sarbast?
+                  </div>
+                  <div class="flex">
+                    <div class="btn-down"><i class="bi bi-x"></i></div>
+                  </div>
+                </div>
+                <div class="faq-item-content">
+                  Когда был создан национальный бренд пива Sarbast? Когда был
+                  создан национальный бренд пива Sarbast?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content mt-10 text-center text-2xl text-brand-gray lg:text-4xl"
+          >
+            21+ ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЬНЫХ ПРОДУКТОВ ВЫЗЫВАЕТ СЕРЬЕЗНЫЕ
+            ЗАБОЛЕВАНИЯ НЕРВНОЙ СИСТЕМЫ И ВНУТРЕННИХ ОРГАНОВ ЧЕЛОВЕКА
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="content footer">
+          <div class="footer-content">
+            <a class="inline-block" href=""
+              ><img src="/img/icons/logo.png" alt=""
+            /></a>
+            <h2 class="border-b border-brand-accent font-semibold text-white">
+              Навигация
+            </h2>
+            <nav>
+              <ul>
+                <li><a class="link" href="#hero">Главная</a></li>
+                <li><a class="link" href="#history">История</a></li>
+                <li><a class="link" href="#brands">Наши бренды</a></li>
+                <li><a class="link" href="#ingredients">Ингредиенты</a></li>
+                <li><a class="link" href="#achievements">Достижения</a></li>
+                <li><a class="link" href="#quiz">Тест</a></li>
+              </ul>
+            </nav>
+            <div class="text-center text-brand-light">
+              <p>
+                Горячая линия:
+                <a href="tel: +(998) 78 140 99 99">+(998) 78 140 99 99</a>
+              </p>
+              <p>
+                OOO "UZCARLSBERG", 100207, Узбекистан, г. Ташкент, ул. Темирчи,
+                1.
+              </p>
+              <p>Факс: (+998) 78 140 88 88</p>
+              <p>
+                Электронный адрес:
+                <a href="mailto: info@carlsberg.uz">info@carlsberg.uz</a>
+              </p>
+            </div>
+          </div>
+          <div class="py-5 text-center text-brand-light">
+            2022 Все права защищены
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

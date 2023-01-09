@@ -80,3 +80,9 @@
 //     margin-right: 100px !important;
 //   }
 // }
+.lang-link {
+  @apply rounded-full text-white;
+  &.active {
+    @apply text-brand-accent;
+  }
+}

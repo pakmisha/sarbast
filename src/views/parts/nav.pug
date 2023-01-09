@@ -5,4 +5,9 @@
             ul
                 each item in seed.nav
                     li: a(href=item.ref class=item.styles)=item.title 
-        button.hamburger(class="block relative mr-5 lg:hidden")
+            div(class="flex items-center")
+                div(class="flex items-center mr-3 lg:ml-5")
+                    a(href="/index.html"  class="lang-link active") Ru 
+                    div(class="bg-brand-accent w-px h-4 mx-2") 
+                    a(href="/index-uz.html" class="lang-link") Uz  
+                button.hamburger(class="block relative ml-3 lg:hidden")
