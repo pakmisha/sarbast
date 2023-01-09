@@ -310,28 +310,6 @@ new Vue({
             },
           ],
         },
-        {
-          question: "Qaysi Sarbast qadog'i folga yorliq bilan himoyalangan?",
-          isAnswered: null,
-          answers: [
-            {
-              answer: "Sarbast Original Unfiltered",
-              point: 0,
-            },
-            {
-              answer: "Sarbast Special",
-              point: 0,
-            },
-            {
-              answer: "Sarbast Original",
-              point: 1,
-            },
-            {
-              answer: "Sarbast Lite",
-              point: 0,
-            },
-          ],
-        },
 
         {
           question:
