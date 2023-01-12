@@ -476,6 +476,34 @@ new Vue({
           max: 4,
         },
       ],
+      resultsUz: [
+        {
+          title: "Tabriklaymiz!",
+          subtitle: "Siz barcha savollarga to'g'ri javob berdingiz.",
+          min: 9,
+          max: 9,
+        },
+        {
+          title: "Tabriklaymiz!",
+          subtitle: "Siz deyarli barcha savollarga to'g'ri javob berdingiz.",
+          min: 7,
+          max: 8,
+        },
+        {
+          title: "Yanada yaxshi bajara olasiz.",
+          subtitle:
+            "Qayta urinib ko'ring va Sarbast haqida ko'proq bilib oling.",
+          min: 5,
+          max: 6,
+        },
+        {
+          title: "Yanada yaxshi bajara olasiz.",
+          subtitle:
+            "Qayta urinib ko'ring va Sarbast haqida ko'proq bilib oling.",
+          min: 0,
+          max: 4,
+        },
+      ],
     };
   },
   computed: {},
