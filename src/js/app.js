@@ -239,7 +239,7 @@ new Vue({
       ],
       questionsUz: [
         {
-          question: "Sarbast milliy pivo brendi qachon yaratilgan?",
+          question: "Sarbast milliy pivo brendi qachon yaratilgan? ",
           isAnswered: null,
           answers: [
             {
@@ -267,7 +267,7 @@ new Vue({
           // },
         },
         {
-          question: "Sarbast nimani anglatadi?",
+          question: "Sarbast nima ma'noni bildiradi? ",
           isAnswered: null,
           answers: [
             {
@@ -289,7 +289,7 @@ new Vue({
           ],
         },
         {
-          question: "Sarbast logotipida nima tasvirlangan? ",
+          question: "Sarbast logotipida nimaning rasmi bor? ",
           isAnswered: null,
           answers: [
             {
@@ -313,7 +313,7 @@ new Vue({
 
         {
           question:
-            "Sarbast original unfiltered ishlab chiqarish qaysi yilda boshlangan? ",
+            " Sarbast Original Unfiltered pivosini chiqarish qaysi yildan boshlangan? ",
           isAnswered: null,
           answers: [
             {
@@ -335,7 +335,7 @@ new Vue({
           ],
         },
         {
-          question: "Sarbast pivosining nechta turi bor? ",
+          question: "Sarbast pivosining nechta navi bor?",
           isAnswered: null,
           answers: [
             {
@@ -357,7 +357,8 @@ new Vue({
           ],
         },
         {
-          question: "Sarbast qaysi xalqaro Belgiya tanlovida qatnashadi? ",
+          question:
+            "Sarbast Belgiyaning qaysi xalqaro konkursida ishtirok etadi?  ",
           isAnswered: null,
           answers: [
             {
@@ -379,33 +380,31 @@ new Vue({
           ],
         },
         {
-          question: "Sarbast pivosi qaysi ingredientlardan tayyorlanadi? ",
+          question:
+            "Sarbast pivosi tarkibiga qanday masalliq solib tayyorlanadi? ",
           isAnswered: null,
           answers: [
             {
-              answer:
-                "Suv, qabartma, undirib yanchilgan bug'doy, xmel o'simligi",
+              answer: "Suv, g'ovaklagich, undirilgan arpa doni, xmel ",
               point: 0,
             },
             {
-              answer:
-                "Suv, xamirturush, undirib yanchilgan bug'doy, xmel o'simligi",
+              answer: "Suv, achitqi, undirilgan arpa doni, xmel ",
               point: 1,
             },
             {
-              answer: "Suv, xamirturush, guruch, xmel o'simligi",
+              answer: "Suv, achitqi, guruch, xmel ",
               point: 0,
             },
             {
-              answer:
-                "Suv, iste'mol sodasi, undirib yanchilgan bug'doy, xmel o'simligi",
+              answer: "Suv, osh soda, undirilgan arpa doni, xmel ",
               point: 0,
             },
           ],
         },
         {
           question:
-            "Sarbast oilasining qaysi sab-brendida alkogol eng past darajada?",
+            "Sarbast ichki brendlarining qaysi birida alkogol eng past darajada? ",
           isAnswered: null,
           answers: [
             {
@@ -427,8 +426,7 @@ new Vue({
           ],
         },
         {
-          question:
-            "Sarbast 2022-yilda qaysi xalqaro sifat mukofotiga sazovor bo'ldi?",
+          question: "2022 yil Sarbast qaysi xalqaro sifat mukofotini oldi? ",
           isAnswered: null,
           answers: [
             {
@@ -479,27 +477,28 @@ new Vue({
       resultsUz: [
         {
           title: "Tabriklaymiz!",
-          subtitle: "Siz barcha savollarga to'g'ri javob berdingiz.",
+          subtitle: "Siz hamma savolimizga to'g'ri javob berdingiz. ",
           min: 9,
           max: 9,
         },
         {
           title: "Tabriklaymiz!",
-          subtitle: "Siz deyarli barcha savollarga to'g'ri javob berdingiz.",
+          subtitle:
+            "Savollarimizning deyarli hammasiga to'g'ri javob berdingiz. ",
           min: 7,
           max: 8,
         },
         {
-          title: "Yanada yaxshi bajara olasiz.",
+          title: "Keyingi safar albatta yengasiz ",
           subtitle:
-            "Qayta urinib ko'ring va Sarbast haqida ko'proq bilib oling.",
+            "Sarbast haqida ko'proq bilib keyinroq yana bir marta harakat qilib ko'ring ",
           min: 5,
           max: 6,
         },
         {
-          title: "Yanada yaxshi bajara olasiz.",
+          title: "Keyingi safar albatta yengasiz ",
           subtitle:
-            "Qayta urinib ko'ring va Sarbast haqida ko'proq bilib oling.",
+            "Sarbast haqida ko'proq bilib keyinroq yana bir marta harakat qilib ko'ring ",
           min: 0,
           max: 4,
         },
